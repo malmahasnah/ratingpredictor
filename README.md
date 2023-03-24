@@ -1,4 +1,4 @@
-# Predicting the Ratings of Recipes.
+# Predicting the Ratings of Recipes
 This is the final project for DSC 80.
 
 ## Framing the Problem
@@ -8,12 +8,12 @@ We are predicting the average ratings of recipes (using linear regression) and w
 The information we know about a certain recipe when we are predicting its rating consist of the recipe's nutrition information, the number of ingredients, the number of steps and number of minutes (i.e how long it takes to make the recipe). In addition, we used the number of reviews depending on whether the recipe had one or more reviews; the number of reviews is representative of recipes that are popular.
 
 
-> Our exploratory data analysis on this dataset can be found [here](https://hunterbrownell.github.io/recipe_project/)
+> Our exploratory data analysis on this dataset can be found [here.](https://hunterbrownell.github.io/recipe_project/)
 
 
 ## Baseline Model
 
-Our model uses eight quantitative features, seven of which we took out of the `nutrition` column; we extracted each one so that we had `calories`, `total fat`, `sugar`, `sodiuum`, `protein`, `saturated fat`, and `carbohydrates`. We standardized each column according to its group (i.e we standardized the `calories` column using only the values in it); so for that we created our own helper function, since there is no built in `sklearn` function that standardizes each category according to its group. We also used the number of steps; we binarized the `n_steps` column and used the median as a threshold. our RMSE was 0.7208576663883866. We think that this model is good/bad, because...
+Our model uses eight quantitative features, seven of which we took out of the `nutrition` column; we extracted each one so that we had `calories`, `total fat`, `sugar`, `sodiuum`, `protein`, `saturated fat`, and `carbohydrates`. We standardized each column according to its group (i.e we standardized the `calories` column using only the values in it); so for that we created our own helper function, since there is no built in `sklearn` function that standardizes each category according to its group. We also used the number of steps; we binarized the `n_steps` column and used the median as a threshold. our RMSE was 0.7208576663883866. We think that this model is not that accurate, because we did not use enough features. (nutrition information/number of steps may be helpful, but there are more features that would be better contributing factors in how a recipe is rated).
 
 
 ## Final Model
