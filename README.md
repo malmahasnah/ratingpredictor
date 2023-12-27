@@ -3,7 +3,7 @@ This is the final project for DSC 80.
 
 ## Framing the Problem
 
-We are predicting the average ratings of recipes (using linear regression) and we are using the rating column which tells us what the recipe ratings are. We did some data cleaning so that the rating column tells us what the average rating of each recipe is. We used RMSE because over other metrics because most of the ratings were five out of five star ratings, so the predicted values would tend to five most of the time. In addition, outliers heavely affect RMSE, therefore RMSE seemed to be a more accurate representation of how well our model was able to predict low ratings.
+We are predicting the average ratings of recipes (using linear regression) and we are using the rating column which tells us what the recipe ratings are. We did some data cleaning so that the rating column tells us what the average rating of each recipe is. We used RMSE over other metrics because most of the ratings were five out of five star ratings, so the predicted values would tend to five most of the time. In addition, outliers heavely affect RMSE, therefore RMSE seemed to be a more accurate representation of how well our model was able to predict low ratings.
 
 The information we know about a certain recipe when we are predicting its rating consist of the recipe's nutrition information, the number of ingredients, the number of steps and number of minutes (i.e how long it takes to make the recipe). In addition, we used the number of reviews depending on whether the recipe had one or more reviews; the number of reviews is representative of recipes that are popular.
 
